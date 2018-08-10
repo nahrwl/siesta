@@ -29,7 +29,7 @@ internal func isObject(_ val: Any) -> Bool
     - ...if strong == true, then StrongOrWeakRef holds the structure.
     - ...if strong == false, then StrongOrWeakRef immediately discards the structure.
 */
-internal struct StrongOrWeakRef<T>
+public struct StrongOrWeakRef<T>
     {
     private var strongRef: T?
     private weak var weakRef: AnyObject?
@@ -47,7 +47,7 @@ internal struct StrongOrWeakRef<T>
 //            : nil
         }
 
-    var strong: Bool
+    public var strong: Bool
         {
         get { return strongRef != nil }
         set { strongRef = newValue ? value : nil }
