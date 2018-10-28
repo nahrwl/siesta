@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Siesta"
-  s.version      = "1.4.0"
+  s.version      = "1.4.2"
   s.summary      = "Swift REST client library"
 
   s.description  = <<-DESC
@@ -70,7 +70,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.11"
   s.tvos.deployment_target = "11.0"
 
-  s.source = { :git => "https://github.com/bustoutsolutions/siesta.git", :tag => "1.4.0" }
+  s.source = { :git => "https://github.com/bustoutsolutions/siesta.git", :tag => "1.4.2" }
 
   s.subspec "Core" do |s|
     s.source_files = "Source/Siesta/**/*"
